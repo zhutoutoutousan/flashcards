@@ -84,12 +84,12 @@ Deck.prototype.deleteCard = function () {
     this.save();
 }
 
-//return number of cards in deck
+// return number of cards in deck
 Deck.prototype.length = function  () {
     return this.cards.length;
 }
 
-//update index to next card
+// update index to next card
 Deck.prototype.next = function () {
     this.index +=1;
     if (this.index >= this.length()) {
@@ -97,7 +97,7 @@ Deck.prototype.next = function () {
     }
 }
 
-//update index to previous card
+// update index to previous card
 Deck.prototype.prev = function () {
     this.index -= 1;
     if (this.index < 0) {
